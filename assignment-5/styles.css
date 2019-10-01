@@ -11,7 +11,7 @@ body
   padding: 0;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
-  background-image: url("/images/background.png");
+  background-image: url("./images/background.png");
   background-color: #F1F1F1;
 }
 
