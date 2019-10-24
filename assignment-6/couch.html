@@ -1,0 +1,90 @@
+<!--    Hamburger Menu code adapted from Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        	Couch Pillow | Fluff Stuff
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+        <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+              <ul id="menu">
+                    <a href="index.html">
+                        <li>
+                            home
+                        </li>
+                    </a>
+                    <a href="pillows.html">
+                        <li>
+                            pillows
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            about
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            sign in / register
+                        </li>
+                    </a>
+                </ul>
+        </div>
+        </nav>
+         <div style="width:1450px;height:100px;border:1px solid #BCB2A4; background-color: #BCB2A4">
+    	<h1>
+    		fluff stuff
+    	</h1>
+         <!--        Cart in header       -->
+        <a href="cart.html" class="selection">
+            <img style="position:absolute; top:36px; right:5px; width:88px; height:58px;" src="./images/cart-icon-blank.png" class="selection">
+        </a>
+        <a href="cart.html" class="selection">
+            <h3 class="cartnum" id="cartnumber" style="position:absolute; top:68px; right:8px; width:88px; height:58px;">0</h3>
+        </a>
+    </div>
+    <body>
+        <a href="javascript:history.back()">
+        	<back-header>
+         		&lt; back
+         	</back-header>
+     	</a>
+        <h2>couch pillow</h2>
+        <div style="width:1450px;height:1000px;border:1px solid #504C4C; background-color: #504C4C">
+            <div>
+                <h6>COLOR:</h3>
+                <!--        Couch pillow image        -->
+                <img style="position:absolute; top:280px; left:260px; width:318px; height:318px;" src="./images/couch-img-1.png" class="selection" id="productimg">
+                <!--        Color options        -->
+                <img style="position:absolute; top:330px; left:630px; width:179px; height:82px;" src="./images/afs-selected.png" id="afscolor"  class="selection" onclick="selectcolorafs()"  />
+                 <img style="position:absolute; top:330px; left:800px; width:179px; height:82px;" src="./images/mh.png" id="mhcolor" class="selection" onclick="selectcolormh()"  />
+                 <img style="position:absolute; top:420px; left:630px; width:179px; height:82px;" src="./images/cd.png" id="cdcolor" class="selection" onclick="selectcolorcd()"  />
+                 <img style="position:absolute; top:420px; left:800px; width:179px; height:82px;" src="./images/rd.png" id="rdcolor" class="selection" onclick="selectcolorrd()"  />
+                 <h6 class="lowheader">FILLING:</h6>
+                 <!--        Filling options        -->
+                <img style="position:absolute; top:580px; left:640px; width:326px; height:94px;" src="./images/dd-selected.png" id="ddfilling" class="selection" onclick="selectfillingdd()"  />
+                 <img style="position:absolute; top:680px; left:640px; width:326px; height:94px;" src="./images/hpb.png" id="hpbfilling" class="selection" onclick="selectfillinghpb()"  />
+                 <img style="position:absolute; top:780px; left:640px; width:326px; height:94px;" src="./images/mf.png" id="mffilling" class="selection" onclick="selectfillingmf()"  />
+                 <!--        Details        -->
+                  <img style="position:absolute; top:610px; left:280px; width:320px; height:298px;" src="./images/couch-product-details.png">
+                <!--        Add to cart        -->
+
+                <img id="cartbutton" class="buttonimage" style="position:absolute; top:920px; left:680px; width:162px; height:67px;" src="./images/add-to-cart.png"  onclick="addtocart()" />
+                <div class="buttoncontainer" style="position:absolute; top:920px; left:684px; width:157px; height:60px;">
+                    <div class="overlay" onclick="addtocart()">
+                    </div>
+                </div>
+                <h6 class="dollar">$39.99</h6>
+            </div>
+        </div>
+    </body>
+</html>
