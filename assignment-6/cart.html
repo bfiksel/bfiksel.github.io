@@ -5,11 +5,12 @@
 <html>
     <head>
         <title>
-        	Couch Pillow | Fluff Stuff
+        	Cart | Fluff Stuff
         </title>
         <link rel="stylesheet" href="styles.css">
         <script type="text/javascript" src="script.js"></script>
     </head>
+
         <nav role="navigation">
         <div id="menuToggle">
             <input type="checkbox" />
@@ -46,9 +47,10 @@
     	</h1>
          <!--        Cart in header       -->
          <img style="position:absolute; top:36px; right:5px; width:88px; height:58px;" src="./images/cart-icon-blank.png">
-         <h3 class="cartnum" id="cartnumber" style="position:absolute; top:68px; right:8px; width:88px; height:58px;">0</h3>
+         <h3 class="cartnum" id="cartnumber" style="position:absolute; top:68px; right:8px; width:88px; height:58px;">0
+         </h3>
     </div>
-    <body>
+    <body onload="cartnumberupdate(); cartupdate(); cartpageupdate(1); cartpageupdate(2); cartpageupdate(3); cartpageupdate(4); cartpageupdate(5); cartpageupdate(6); calculatecost()"/ >
         <a href="javascript:history.back()">
         	<back-header>
          		&lt; back
@@ -56,8 +58,29 @@
      	</a>
         <h2>cart</h2>
         <div style="width:1450px;height:1000px;border:1px solid #504C4C; background-color: #504C4C">
-            <div class="pillow-list">
-            <img src="./images/cart.png">
+           <div id="cartlist">
+           </div>
+            <div class="cartbg"> 
+                <div class="cartbgdiv">
+                    <img id="cartitem1" class="cartitemlist" src=""> <img id="x1" src="" onclick="removefromcart(1)">
+                    <br>
+                     <img id="cartitem2" class="cartitemlist" src=""> <img id="x2" src="" onclick="removefromcart(2)">
+                     <br>
+                    <img id="cartitem3" class="cartitemlist" src="" onclick="removefromcart(3)"> <img id="x3" src="" onclick="removefromcart(3)">
+                     <br>
+                    <img id="cartitem4" class="cartitemlist" src="" onclick="removefromcart(4)"> <img id="x4" src="" onclick="removefromcart(4)">
+                     <br>
+                    <img id="cartitem5" class="cartitemlist" src="" onclick="removefromcart(5)"> <img id="x5" src="" onclick="removefromcart(5)">
+                     <br>
+                    <img id="cartitem6" class="cartitemlist" src="" onclick="removefromcart(6)"> <img id="x6" src="" onclick="removefromcart(6)">
+
+                    <div>
+                        <h7>TOTAL: $<h8 id=costoncart></h8>.00</h7>
+                    </div>
+                <div>
+                    <a href="pillows.html"><img class="cartbuttons" src="./images/shop-more-pillows-button.png"></a> <img src="./images/checkout-button.png">
+                </div>
+                </div>
         </div>
             </div>
         </div>

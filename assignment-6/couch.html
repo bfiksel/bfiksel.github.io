@@ -49,10 +49,11 @@
             <img style="position:absolute; top:36px; right:5px; width:88px; height:58px;" src="./images/cart-icon-blank.png" class="selection">
         </a>
         <a href="cart.html" class="selection">
-            <h3 class="cartnum" id="cartnumber" style="position:absolute; top:68px; right:8px; width:88px; height:58px;">0</h3>
+            <h3 class="cartnum" id="cartnumber" style="position:absolute; top:68px; right:8px; width:88px; height:58px;">0
+            </h3>
         </a>
     </div>
-    <body>
+    <body onload="cartnumberupdate(); cartupdate();" />
         <a href="javascript:history.back()">
         	<back-header>
          		&lt; back
@@ -77,10 +78,9 @@
                  <!--        Details        -->
                   <img style="position:absolute; top:610px; left:280px; width:320px; height:298px;" src="./images/couch-product-details.png">
                 <!--        Add to cart        -->
-
-                <img id="cartbutton" class="buttonimage" style="position:absolute; top:920px; left:680px; width:162px; height:67px;" src="./images/add-to-cart.png"  onclick="addtocart()" />
+                <img id="cartbutton" class="buttonimage" style="position:absolute; top:920px; left:680px; width:162px; height:67px;" src="./images/add-to-cart.png" onclick="pillowtocart2(); addtocart(); cartupdate();"/ >
                 <div class="buttoncontainer" style="position:absolute; top:920px; left:684px; width:157px; height:60px;">
-                    <div class="overlay" onclick="addtocart()">
+                    <div class="overlay" onclick="pillowtocart2(); addtocart(); cartupdate();" / >
                     </div>
                 </div>
                 <h6 class="dollar">$39.99</h6>
