@@ -1,0 +1,505 @@
+
+
+body {
+ background: linear-gradient(to bottom, black 0%, black 8%, #A8A8A8 8%, #A8A8A8 42%, black 42%, black 100%);;
+}
+
+/* Top Info */
+.instructions {
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+}
+.title {
+  font-size: 2.5em;
+  opacity: 0.9;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+}
+.description {
+  font-size: 1.5em;
+  opacity: 0.9;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+}
+
+.label {
+  font-family: monospace;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+h5 {
+}
+
+#help {
+  height:35px;
+  width: 35px;
+  position:fixed;
+  right: 20px;
+  top: 15px;
+
+}
+
+#help:hover {
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+  cursor: pointer;
+}
+
+#help:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+
+.bamplebutton {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 8%;
+  min-width: 180px;
+  height: 8%;
+  min-height: 180px;
+  padding: 0px;
+}
+
+
+.bamplebutton:active {
+  webkit-animation: bounce .3s infinite alternate;
+  -moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+  -webkit-animation-iteration-count: 2;
+  -moz-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  transform: translateY(4px);
+}
+
+.bamplebutton.activate {
+  webkit-animation: bounce .3s infinite alternate;
+  -moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+  -webkit-animation-iteration-count: 2;
+  -moz-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  transform: translateY(4px);
+}
+
+
+ #outer-circle {
+   background: white;
+   border-radius: 50%;
+   height: 200px;
+   width: 200px;
+   position: relative;
+   color: white;
+   /* 
+    Child elements with absolute positioning will be 
+    positioned relative to this div 
+   */
+ }
+ #inner-circle {
+   position: absolute;
+   background: #a9aaab;
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   color: green;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: -50px 0px 0px -50px;
+   /* 
+    Offset the position correctly with
+    minus half of the width and minus half of the height 
+   */
+ }
+
+ #audioplayer{
+  background-color: black;
+  width: 480px;
+  height: 60px;
+  margin: 50px auto auto auto;
+  border: solid;
+}
+
+h {
+  color:white;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  line-height:15px;
+
+}
+
+p {
+  color:white;
+  font-family: monospace;
+  line-height:15px;
+
+}
+
+.pad{
+  color:white;
+  font-family: monospace;
+  font-weight: bold;
+  line-height:10px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 150px;
+  max-width: 100%;
+  height: 150px;
+  max-height: 10%;
+  min-height: 100px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: white;
+  position:relative;
+  overflow:hidden;
+  margin:0px auto;
+}
+
+.savedpad{
+  color: white;
+  border-radius: 30px;
+  padding: 0px;
+  width: 150px;
+  max-width: 100%;
+  height: 150px;
+  max-height: 10%;
+  min-height: 100px
+  border-width: 6px;
+  border-color: white;
+  border: dashed 4px white;
+  padding: 0px;
+  position:relative;
+  overflow:hidden;
+  margin:0px auto;
+}
+
+#outside {
+  position: absolute;
+  background-color: turquoise;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+}
+
+#inside {
+  position: absolute;
+  background-color: coral;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 20%;
+}
+
+
+
+.button5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 560px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.button1:active {
+  -webkit-animation: bounce .3s infinite alternate;
+  -moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+  -webkit-animation-iteration-count: 8;
+  -moz-animation-iteration-count: 8;
+  animation-iteration-count: 8;
+}
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+}
+
+
+.button2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 560px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.button3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 560px;
+  left: 500px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.button6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 560px;
+  left: 300px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+
+.button4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 560px;
+  left: 700px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+.waveform {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slidecontainer {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  ext-align: center;
+  display: block;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 2px;
+  width: 22%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+@keyframes bouncy {
+ 0%{top:0em}
+ 40%{top:0em}
+ 43%{top:-0.9em}
+ 46%{top:0em}
+ 48%{top:-0.4em}
+ 50%{top:0em}
+ 100%{top:0em;}
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.held {
+  border: solid 10px black;
+  background-color: black;
+}
+
+.holder {
+  height: 110px;
+  width: 110px;
+  margin: 10px;
+  border: solid 5px black;
+  background-color: white;
+  display: inline-block;
+}
+
+.hovered {
+  border: dotted 5px black;
+}
+
+.invisible {
+  display: none;
+}
+
+#container {
+  margin: auto;
+  top: 100px;
+  width: 400px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: white;
+  opacity: 0.0;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.pad:hover {
+  cursor: pointer;
+}
+
+.pad:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.overlay:active {
+  opacity: 0.7;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.bamplebutton:hover {
+  transform: translateY(1px)
+}
+
+
+.pad:hover {
+  transform: translateY(1px)
+}
+
+
+.pad:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.pad.activate {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {help
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
