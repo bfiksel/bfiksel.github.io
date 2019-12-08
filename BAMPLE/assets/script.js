@@ -1,4 +1,4 @@
-/*****Inspired by: http://codeitdown.com/responsive-css-shapes/​
+/*****Sites consulted include: codepen.com / stackoverflow.com / w3schools.com / no large chunks of functionality code were directly copied
 ******/
 
     var sample1;
@@ -6,7 +6,6 @@
     localStorage.setItem("length", "600");
     var fadelength;
     localStorage.setItem("fadelength", "950");
-//change 20000 to lenght of song later
 
 //function updatelength() {
   //  var length;
