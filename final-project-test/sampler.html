@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sampler </title>
+        <script type="text/javascript" src="js/nexusUI.js" ></script>
+        <script type="text/javascript" src="js/Tone.js" ></script>
+        <script>
+            var sampler = new Tone.Player("clap.wav", function() {
+                console.log("samples loaded");
+            });
+            sampler.toMaster();
+        </script>
+    </head>
+    <body>
+    	<canvas nx="button"></canvas>
+    </body>
+</html>

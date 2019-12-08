@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="./styles.css">
+    <!-- Scripts -->
+  <script src="../../src/howler.core.js"></script>
+  <script src="./script.js"></script>
+  <script src="http://shrt.tf/howler.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+  <title>
+    Bample!
+  </title>
+</head>
+  <body onload="setup(); modalopen();">
+    <div class="background"></div>
+<img src="./images/questionmark.png" id="help" onclick="modalopen();">
+
+
+<input style="color:white; height: 20px; text-align: center; display: block; margin: 0 auto; padding-left:100px; font-size: 10px; font-family:monospace;" type="file" id="rll" onchange="handleFiles(event);" />
+<audio id="rllly" controls style="height: 30px; text-align: center; display: block; margin: 0 auto; padding-bottom:3px; font-size: 4px;">
+  <source src="" id="rlly" style="color: white" />
+</audio>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closemodal();">&times;</span>
+    <h>HOW TO USE BAMPLE:</h>
+    <p>Load in any audio file up top (.wav, .mp3, etc)</p>
+    <p>Press the "BAMPLE" button (or tap the 'b' key) to begin pulling random samples from the sound file!</p>
+    <p>Use the slider to adjust the sample length.</p>
+    <p>Touch the pads or use the keyboard shortcuts to play your samples!</p>
+    <p>If you get a sample you like, drag it down into the saved sample pad section. Those bottom pads will stay locked even as you BAMPLE the top ones</p>
+    <p>Note: BAMPLE pulls randomly from across the whole audio file. There may be samples that turn up silent. That's okay! Just BAMPLE again to get new samples</p>
+    <p>Enjoy!</p>
+    <p>- Brandon Fiksel</p>
+  </div>
+</div>
+
+
+<br></br>
+<div class="row">
+  <div class="column">
+  <div class="pad" id="padtop1" style="background-color:white" onclick="playit();" draggable="true" ondragstart="drag1(event);"/>Q</div>
+</div>
+
+<div class="column">
+  <div class="pad" id="padtop2" style="background-color:white" onclick="playit2();" draggable="true" ondragstart="drag2(event);"/>W</div>
+  </div>
+
+<div class="column">
+  <div class="pad" id="padtop3" style="background-color:white" onclick="playit3();" draggable="true" ondragstart="drag3(event)">E</div>
+</div>
+
+<div class="column">
+   <div class="pad" id="padtop4" style="background-color:white" onclick="playit4();" draggable="true" ondragstart="drag4(event)">R</div>
+ </div>
+ </div>
+</div>
+
+  <img id="bamplebutton" class="bamplebutton" onclick="randomize(); bample();" src="./images/bamplelarge.png" align="middle">
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="slider" oninput="sliderChange(this.value);"/>
+  <output id="sliderVal"> </output>
+  <div class="label" id="samplelength">SAMPLE LENGTH: 700 ms </div>
+</div>
+<div class="row">
+    <div class="column">
+  <div class="savedpad" id="sp1" style="background-color:black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<div class="column">
+  <div class="savedpad" id="sp2" style="background-color:black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<div class="column">
+  <div class="savedpad" id="sp3" style="background-color:black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="column">
+  <div class="savedpad" id="sp4" style="background-color:black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+</div>
+</div>
+
+
+
+  <br></br>
+
+  </div>
+  <div>
+
+  <br></br>
+
+
+    </div>
+</div>
+
+  <br></br>
+
+</body>
+</html>
