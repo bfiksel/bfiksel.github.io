@@ -32,10 +32,21 @@
 		object-fit:contain;
 }
 
+#video3 {
+		position: absolute;
+		left: 0px;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		padding-left: 0px;
+		-o-object-fit: contain;
+		object-fit:contain;
+}
+
 @media only screen and (max-width: 479px) {
 	.section {
-		margin-right: 20px;
-		margin-left: 20px;
+		margin-right: 3px;
+		margin-left: 3px;
 	}
 
 	.div-block{
@@ -44,7 +55,7 @@
 		object-fit: contain;
 	}
 	#video {
-		position: relative;
+		position: absolute;
 		left: -100px;
 		top:-150px;
 		width: 1301px;
@@ -55,7 +66,7 @@
 	}
 
 	#video2 {
-		position: relative;
+		position: absolute;
 		left: -850px;
 		top:-150px;
 		width: 1301px;
@@ -67,7 +78,7 @@
 
 
 	#video3 {
-		position: relative;
+		position: absolute;
 		left: -450px;
 		top:-150px;
 		width: 1301px;
